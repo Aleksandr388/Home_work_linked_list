@@ -18,7 +18,27 @@ namespace Home_work_linked_list
             modelCars.Add(4);
             modelCars.Add(5);
 
+
+            Console.WriteLine("Model: ");
+
+            foreach (var item in modelCars)
+            {
+                Console.WriteLine(item + " ");
+            }
             Console.WriteLine();
+
+            modelCars.Remove(3);
+            modelCars.Remove(10);
+
+
+            Console.WriteLine("Model: ");
+
+            foreach (var item in modelCars)
+            {
+                Console.WriteLine(item + " ");
+            }
+            Console.WriteLine();
+
             Console.ReadLine();
         }
     }

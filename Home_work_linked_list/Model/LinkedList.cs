@@ -74,7 +74,12 @@ namespace Home_work_linked_list.Model
 
         public IEnumerator GetEnumerator()
         {
-            throw new NotImplementedException();
+            var current = Head;
+            while (current != null)
+            {
+                yield return current.Data;
+                current = current.Next;
+            }
         }
     }
 }
